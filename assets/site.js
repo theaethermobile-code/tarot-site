@@ -1,7 +1,7 @@
 // assets/site.js
 document.addEventListener('DOMContentLoaded', async () => {
   // cambia este valor cuando subas cambios para bustear la caché
-  const v = '2025-11-02-02';
+  const v = '2025-11-02-03';
 
   async function inject(selector, url){
     const host = document.querySelector(selector);
