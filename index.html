@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lecturas de Tarot — El oráculo diario</title>
-  <meta name="description" content="Lecturas de tarot honestas y claras. Videollamada, voz o chat. Reserva tu lectura.">
+  <meta name="description" content="Sesiones de tarot: 60/30/20 minutos o lecturas por 1, 2 o 3 preguntas. Videollamada, voz o chat. Reserva tu lectura.">
 
   <!-- (Opcional) Tailwind por CDN para utilidades rápidas -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,13 +20,15 @@
   <div data-include="partials/header.html"></div>
 
   <main class="container" style="padding:2rem 0;">
+    <!-- Hero -->
     <section class="grid md:grid-cols-2 gap-8 items-center">
       <div>
         <h1 class="text-3xl md:text-4xl font-bold leading-tight">
-          Lecturas de tarot honestas y directas
+          Lecturas de tarot claras y prácticas
         </h1>
         <p class="mt-4 text-lg muted">
-          Elige 15 / 30 / 60 min · Videollamada, voz o chat. Enfoque ético y claro.
+          Sesiones de <strong>60 / 30 / 20 minutos</strong> o lecturas por <strong>1 / 2 / 3 preguntas</strong>.  
+          Elige <em>videollamada</em>, <em>voz</em> o <em>chat</em>. Enfoque ético, confidencial y directo.
         </p>
         <div class="mt-6 flex gap-3">
           <a href="reserva.html" class="btn btn-primary">Reserva tu lectura</a>
@@ -45,18 +47,60 @@
       </div>
     </section>
 
-    <section class="mt-12 grid grid-3">
+    <!-- Bloque informativo sobre el tarot -->
+    <section class="mt-10">
       <div class="card">
-        <h3 class="font-semibold text-lg">15 minutos</h3>
-        <p class="mt-2 text-sm muted">Pregunta concreta / enfoque directo.</p>
+        <h2 class="text-2xl font-semibold">Sobre el tarot</h2>
+        <p class="mt-3 muted">
+          El tarot es una herramienta de reflexión y orientación. No dicta destinos, sino que
+          ilumina contextos, patrones y posibilidades para ayudarte a tomar mejores decisiones.
+          En cada sesión trabajamos con preguntas claras, respeto por tu proceso y privacidad.
+          Podrás llevarte claves prácticas y, si lo deseas, un breve resumen de la lectura.
+        </p>
       </div>
-      <div class="card">
-        <h3 class="font-semibold text-lg">30 minutos</h3>
-        <p class="mt-2 text-sm muted">Dos áreas o una situación con contexto.</p>
+    </section>
+
+    <!-- Sesiones por tiempo -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold mb-4">Sesiones por tiempo</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 class="font-semibold text-lg">60 minutos</h3>
+          <p class="mt-2 text-sm muted">Lectura completa con profundidad y cierre. Ideal para temas complejos.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold text-lg">30 minutos</h3>
+          <p class="mt-2 text-sm muted">Dos áreas o un tema con contexto. Enfoque claro y accionable.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold text-lg">20 minutos</h3>
+          <p class="mt-2 text-sm muted">Pregunta principal con orientación directa. Formato rápido.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
       </div>
-      <div class="card">
-        <h3 class="font-semibold text-lg">60 minutos</h3>
-        <p class="mt-2 text-sm muted">Lectura completa, con resumen posterior.</p>
+    </section>
+
+    <!-- Lecturas por preguntas -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-semibold mb-4">Lecturas por preguntas</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 class="font-semibold text-lg">1 pregunta</h3>
+          <p class="mt-2 text-sm muted">Respuesta directa para una cuestión concreta.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold text-lg">2 preguntas</h3>
+          <p class="mt-2 text-sm muted">Dos focos relacionados o independientes, con recomendaciones.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
+        <div class="card">
+          <h3 class="font-semibold text-lg">3 preguntas</h3>
+          <p class="mt-2 text-sm muted">Visión panorámica de situación + próximos pasos.</p>
+          <a href="reserva.html" class="btn btn-ghost" style="margin-top:.75rem;">Reservar</a>
+        </div>
       </div>
     </section>
   </main>
