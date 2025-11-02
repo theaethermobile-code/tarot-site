@@ -3,66 +3,69 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Lecturas de Tarot — [Tu Marca]</title>
+  <title>Lecturas de Tarot — Tu Marca</title>
   <meta name="description" content="Lecturas de tarot honestas y claras. Videollamada, voz o chat. Reserva tu lectura.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="/assets/favicon.png">
-</head>
-<body class="bg-white text-gray-900">
-  <header class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
-    <a href="./" class="font-semibold text-lg">[Tu Marca]</a>
-    <nav class="space-x-4 text-sm">
-      <a href="servicios.html" class="hover:underline">Servicios</a>
-      <a href="reserva.html" class="hover:underline">Reserva</a>
-      <a href="testimonios.html" class="hover:underline">Testimonios</a>
-      <a href="sobre-mi.html" class="hover:underline">Sobre mí</a>
-      <a href="contacto.html" class="hover:underline">Contacto</a>
-    </nav>
-  </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-10">
+  <!-- (Opcional) Tailwind por CDN para utilidades rápidas -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Estilos globales del sitio -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Favicon (ruta relativa para GitHub Pages) -->
+  <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+  <!-- Header insertado automáticamente -->
+  <div data-include="partials/header.html"></div>
+
+  <main class="container" style="padding:2rem 0;">
     <section class="grid md:grid-cols-2 gap-8 items-center">
       <div>
         <h1 class="text-3xl md:text-4xl font-bold leading-tight">
           Lecturas de tarot honestas y directas
         </h1>
-        <p class="mt-4 text-lg">
+        <p class="mt-4 text-lg muted">
           Elige 15 / 30 / 60 min · Videollamada, voz o chat. Enfoque ético y claro.
         </p>
         <div class="mt-6 flex gap-3">
-          <a href="reserva.html" class="px-6 py-3 border rounded-lg font-semibold hover:bg-gray-50">Reserva tu lectura</a>
-          <a href="servicios.html" class="px-6 py-3 border rounded-lg font-semibold hover:bg-gray-50">Ver servicios</a>
+          <a href="reserva.html" class="btn btn-primary">Reserva tu lectura</a>
+          <a href="servicios.html" class="btn btn-ghost">Ver servicios</a>
         </div>
       </div>
+
       <div class="w-full">
         <!-- TikTok embed -->
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@TU_USUARIO_TT/video/VIDEO_ID"
-          data-video-id="VIDEO_ID" style="max-width: 605px; min-width: 325px;">
+        <blockquote class="tiktok-embed"
+          cite="https://www.tiktok.com/@TU_USUARIO_TT/video/VIDEO_ID"
+          data-video-id="VIDEO_ID"
+          style="max-width: 605px; min-width: 325px;">
         </blockquote>
         <script async src="https://www.tiktok.com/embed.js"></script>
       </div>
     </section>
 
-    <section class="mt-12 grid md:grid-cols-3 gap-6">
-      <div class="p-6 border rounded-2xl">
+    <section class="mt-12 grid grid-3">
+      <div class="card">
         <h3 class="font-semibold text-lg">15 minutos</h3>
-        <p class="mt-2 text-sm text-gray-600">Pregunta concreta / enfoque directo.</p>
+        <p class="mt-2 text-sm muted">Pregunta concreta / enfoque directo.</p>
       </div>
-      <div class="p-6 border rounded-2xl">
+      <div class="card">
         <h3 class="font-semibold text-lg">30 minutos</h3>
-        <p class="mt-2 text-sm text-gray-600">Dos áreas o una situación con contexto.</p>
+        <p class="mt-2 text-sm muted">Dos áreas o una situación con contexto.</p>
       </div>
-      <div class="p-6 border rounded-2xl">
+      <div class="card">
         <h3 class="font-semibold text-lg">60 minutos</h3>
-        <p class="mt-2 text-sm text-gray-600">Lectura completa, con resumen posterior.</p>
+        <p class="mt-2 text-sm muted">Lectura completa, con resumen posterior.</p>
       </div>
     </section>
   </main>
 
-  <footer class="max-w-5xl mx-auto px-4 py-10 text-sm text-gray-600">
-    © <span id="y"></span> [Tu Marca] — <a href="contacto.html" class="underline">Privacidad / Avisos</a>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <!-- Footer insertado automáticamente -->
+  <div data-include="partials/footer.html"></div>
+
+  <!-- Script que inserta header/footer y activa enlace de navegación -->
+  <script src="assets/site.js"></script>
 </body>
 </html>
 
